@@ -1,0 +1,45 @@
+*.pyc
+*.py~
+*.*~
+*.html~
+*.DS_Store
+NavneetJombayTest/Lib/SMobiLogger/SMobiLogger.xcodeproj/xcuserdata/
+NavneetJombayTest/Lib/SMobiLogger/build
+NavneetJombayTest.xcodeproj/project.xcworkspace/
+NavneetJombayTest.xcodeproj/xcuserdata/
+NavneetJombayTest.xcodeproj/project.xcworkspace/xcuserdata/
+Pods/Pods.xcodeproj/xcuserdata/
+NavneetJombayTest.xcodeproj/project.xcworkspace/
+NavneetJombayTest.xcodeproj/xcuserdata/
+NavneetJombayTest.xcworkspace/xcuserdata/
+NavneetJombayTest.xcworkspace/contents.xcworkspacedata
+NavneetJombayTest.xcworkspace/xcshareddata/NavneetJombayTest.xcscmblueprint
+Pods/Pods.xcodeproj/xcuserdata/
+
+## Build generated
+build/
+DerivedData
+
+## Various settings
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+
+## Other
+*.xccheckout
+*.moved-aside
+*.xcuserstate
+*.xcscmblueprint
+*.DS_Store
+
+## Obj-C/Swift specific
+*.hmap
+*.ipa
+SMobiLogger
+
