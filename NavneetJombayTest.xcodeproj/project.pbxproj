@@ -9,11 +9,20 @@
 /* Begin PBXBuildFile section */
 		7D5CD34E198412BBCCA56C63 /* Pods_NavneetJombayTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E033AA869FE6722239659C82 /* Pods_NavneetJombayTest.framework */; };
 		F19DAE5F1F3DB03D007F14FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */; };
-		F19DAE611F3DB03D007F14FF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE601F3DB03D007F14FF /* ViewController.swift */; };
+		F19DAE611F3DB03D007F14FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE601F3DB03D007F14FF /* LoginViewController.swift */; };
 		F19DAE641F3DB03D007F14FF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19DAE621F3DB03D007F14FF /* Main.storyboard */; };
 		F19DAE671F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE651F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld */; };
 		F19DAE691F3DB03D007F14FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19DAE681F3DB03D007F14FF /* Assets.xcassets */; };
 		F19DAE6C1F3DB03D007F14FF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F19DAE6A1F3DB03D007F14FF /* LaunchScreen.storyboard */; };
+		F19DAE761F3DCCBB007F14FF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE751F3DCCBB007F14FF /* Reachability.swift */; };
+		F19DAE791F3DD14A007F14FF /* LoginRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE781F3DD14A007F14FF /* LoginRequestManager.swift */; };
+		F19DAE7D1F3DD1C3007F14FF /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE7C1F3DD1C3007F14FF /* Request.swift */; };
+		F19DAE7F1F3DD1F4007F14FF /* LoginInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE7E1F3DD1F4007F14FF /* LoginInterface.swift */; };
+		F19DAE811F3DD316007F14FF /* Constant.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE801F3DD316007F14FF /* Constant.swift */; };
+		F19DAE831F3DD3BC007F14FF /* LoginRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE821F3DD3BC007F14FF /* LoginRequest.swift */; };
+		F19DAE851F3DD46C007F14FF /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE841F3DD46C007F14FF /* Interface.swift */; };
+		F19DAE871F3DD846007F14FF /* RealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE861F3DD846007F14FF /* RealAPI.swift */; };
+		F19DAE891F3DD8D0007F14FF /* NetworkHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE881F3DD8D0007F14FF /* NetworkHttpClient.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,12 +31,21 @@
 		E033AA869FE6722239659C82 /* Pods_NavneetJombayTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavneetJombayTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19DAE5B1F3DB03D007F14FF /* NavneetJombayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavneetJombayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F19DAE601F3DB03D007F14FF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F19DAE601F3DB03D007F14FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		F19DAE631F3DB03D007F14FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F19DAE661F3DB03D007F14FF /* NavneetJombayTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavneetJombayTest.xcdatamodel; sourceTree = "<group>"; };
 		F19DAE681F3DB03D007F14FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19DAE6B1F3DB03D007F14FF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F19DAE6D1F3DB03D007F14FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F19DAE751F3DCCBB007F14FF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		F19DAE781F3DD14A007F14FF /* LoginRequestManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequestManager.swift; sourceTree = "<group>"; };
+		F19DAE7C1F3DD1C3007F14FF /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
+		F19DAE7E1F3DD1F4007F14FF /* LoginInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInterface.swift; sourceTree = "<group>"; };
+		F19DAE801F3DD316007F14FF /* Constant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constant.swift; sourceTree = "<group>"; };
+		F19DAE821F3DD3BC007F14FF /* LoginRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRequest.swift; sourceTree = "<group>"; };
+		F19DAE841F3DD46C007F14FF /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		F19DAE861F3DD846007F14FF /* RealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAPI.swift; sourceTree = "<group>"; };
+		F19DAE881F3DD8D0007F14FF /* NetworkHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHttpClient.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,8 +98,11 @@
 		F19DAE5D1F3DB03D007F14FF /* NavneetJombayTest */ = {
 			isa = PBXGroup;
 			children = (
+				F19DAE741F3DCCBB007F14FF /* Reachability */,
 				F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */,
-				F19DAE601F3DB03D007F14FF /* ViewController.swift */,
+				F19DAE601F3DB03D007F14FF /* LoginViewController.swift */,
+				F19DAE801F3DD316007F14FF /* Constant.swift */,
+				F19DAE771F3DD139007F14FF /* NetworkManager */,
 				F19DAE621F3DB03D007F14FF /* Main.storyboard */,
 				F19DAE681F3DB03D007F14FF /* Assets.xcassets */,
 				F19DAE6A1F3DB03D007F14FF /* LaunchScreen.storyboard */,
@@ -89,6 +110,44 @@
 				F19DAE651F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld */,
 			);
 			path = NavneetJombayTest;
+			sourceTree = "<group>";
+		};
+		F19DAE741F3DCCBB007F14FF /* Reachability */ = {
+			isa = PBXGroup;
+			children = (
+				F19DAE751F3DCCBB007F14FF /* Reachability.swift */,
+			);
+			path = Reachability;
+			sourceTree = "<group>";
+		};
+		F19DAE771F3DD139007F14FF /* NetworkManager */ = {
+			isa = PBXGroup;
+			children = (
+				F19DAE781F3DD14A007F14FF /* LoginRequestManager.swift */,
+				F19DAE861F3DD846007F14FF /* RealAPI.swift */,
+				F19DAE881F3DD8D0007F14FF /* NetworkHttpClient.swift */,
+				F19DAE7B1F3DD17E007F14FF /* Interfaces */,
+				F19DAE7A1F3DD17E007F14FF /* Requests */,
+			);
+			path = NetworkManager;
+			sourceTree = "<group>";
+		};
+		F19DAE7A1F3DD17E007F14FF /* Requests */ = {
+			isa = PBXGroup;
+			children = (
+				F19DAE7C1F3DD1C3007F14FF /* Request.swift */,
+				F19DAE821F3DD3BC007F14FF /* LoginRequest.swift */,
+			);
+			path = Requests;
+			sourceTree = "<group>";
+		};
+		F19DAE7B1F3DD17E007F14FF /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				F19DAE841F3DD46C007F14FF /* Interface.swift */,
+				F19DAE7E1F3DD1F4007F14FF /* LoginInterface.swift */,
+			);
+			path = Interfaces;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -219,9 +278,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19DAE831F3DD3BC007F14FF /* LoginRequest.swift in Sources */,
+				F19DAE851F3DD46C007F14FF /* Interface.swift in Sources */,
 				F19DAE671F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld in Sources */,
-				F19DAE611F3DB03D007F14FF /* ViewController.swift in Sources */,
+				F19DAE891F3DD8D0007F14FF /* NetworkHttpClient.swift in Sources */,
+				F19DAE7F1F3DD1F4007F14FF /* LoginInterface.swift in Sources */,
+				F19DAE7D1F3DD1C3007F14FF /* Request.swift in Sources */,
+				F19DAE811F3DD316007F14FF /* Constant.swift in Sources */,
+				F19DAE611F3DB03D007F14FF /* LoginViewController.swift in Sources */,
+				F19DAE871F3DD846007F14FF /* RealAPI.swift in Sources */,
+				F19DAE761F3DCCBB007F14FF /* Reachability.swift in Sources */,
 				F19DAE5F1F3DB03D007F14FF /* AppDelegate.swift in Sources */,
+				F19DAE791F3DD14A007F14FF /* LoginRequestManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
