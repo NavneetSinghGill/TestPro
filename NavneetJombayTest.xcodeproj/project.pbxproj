@@ -23,6 +23,7 @@
 		F19DAE851F3DD46C007F14FF /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE841F3DD46C007F14FF /* Interface.swift */; };
 		F19DAE871F3DD846007F14FF /* RealAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE861F3DD846007F14FF /* RealAPI.swift */; };
 		F19DAE891F3DD8D0007F14FF /* NetworkHttpClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE881F3DD8D0007F14FF /* NetworkHttpClient.swift */; };
+		F19DAE8C1F3ECC1E007F14FF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE8B1F3ECC1E007F14FF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,6 +47,7 @@
 		F19DAE841F3DD46C007F14FF /* Interface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
 		F19DAE861F3DD846007F14FF /* RealAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealAPI.swift; sourceTree = "<group>"; };
 		F19DAE881F3DD8D0007F14FF /* NetworkHttpClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHttpClient.swift; sourceTree = "<group>"; };
+		F19DAE8B1F3ECC1E007F14FF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,6 +104,7 @@
 				F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */,
 				F19DAE601F3DB03D007F14FF /* LoginViewController.swift */,
 				F19DAE801F3DD316007F14FF /* Constant.swift */,
+				F19DAE8A1F3ECBED007F14FF /* Models */,
 				F19DAE771F3DD139007F14FF /* NetworkManager */,
 				F19DAE621F3DB03D007F14FF /* Main.storyboard */,
 				F19DAE681F3DB03D007F14FF /* Assets.xcassets */,
@@ -148,6 +151,14 @@
 				F19DAE7E1F3DD1F4007F14FF /* LoginInterface.swift */,
 			);
 			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		F19DAE8A1F3ECBED007F14FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F19DAE8B1F3ECC1E007F14FF /* User.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,6 +289,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F19DAE8C1F3ECC1E007F14FF /* User.swift in Sources */,
 				F19DAE831F3DD3BC007F14FF /* LoginRequest.swift in Sources */,
 				F19DAE851F3DD46C007F14FF /* Interface.swift in Sources */,
 				F19DAE671F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld in Sources */,

@@ -24,7 +24,8 @@ class LoginInterface: Interface {
     }
     
     func parseLoginReponse(response : Dictionary<String, Any>) {
-        
+        User.handleLoginResponse(loginResponse: response)
+        self.interfaceBlock!(true, "", nil)
     }
     
 }
