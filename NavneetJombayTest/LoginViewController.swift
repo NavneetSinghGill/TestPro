@@ -35,6 +35,11 @@ class LoginViewController: UIViewController {
                 if success {
 //                    self.performDealerRelatedAPICalls()
 //                    Util.setDefaultControllerAsRootController()
+                    
+                    LoginRequestManager.getCurrentUserWith(block: { (success, response, error) in
+                        
+                    })
+                    
                 } else {
 //                    Util.showAlertWith(title: "Login Failed", message: error?.localizedDescription, inController: self)
                 }

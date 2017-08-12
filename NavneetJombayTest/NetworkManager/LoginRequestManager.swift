@@ -21,4 +21,15 @@ class LoginRequestManager: NSObject {
         
     }
     
+    static func getCurrentUserWith(block:@escaping requestCompletionBlock)
+    {
+        if appDelegate.isNetworkAvailable {
+            LoginInterface().getCurrentUserWith(request: LoginRequest().getCurrentUserRequest(), withCompletionBlock: block)
+            
+        } else{
+            //TODO: show network failure error
+        }
+        
+    }
+    
 }

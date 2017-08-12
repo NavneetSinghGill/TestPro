@@ -17,6 +17,8 @@ public typealias requestCompletionBlock = (_ success: Bool, _ response: Any, _ e
 
 let kUsername = "username"
 let kPassword = "password"
+let kAccessToken = "access_token"
+let kAuthorization = "Authorization"
 
 
 let kBaseUrl = "https://api.es-q.co"
@@ -24,3 +26,4 @@ let kBaseUrl = "https://api.es-q.co"
 //MARK: Api URLs
 
 let kLoginApiUrl = "/oauth/token.json"
+let kGetCurrentUserApiUrl = "/users/current.json"

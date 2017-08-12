@@ -21,4 +21,10 @@ class LoginRequest: Request {
         return self
     }
     
+    func getCurrentUserRequest() -> LoginRequest {
+        
+        self.urlPath = kGetCurrentUserApiUrl
+        return self
+    }
+    
 }

@@ -10,22 +10,44 @@ import UIKit
 
 class LoginInterface: Interface {
 
+    //MARK: Perfrom API methods
+    
     func performLoginWith(request:Request, withCompletionBlock block:@escaping requestCompletionBlock)
     {
         self.interfaceBlock = block
         RealAPI().performPostAPICallWith(request: request, completionBlock: { success, response, error in
             if success {
+                NSLog("\n \n Login response: \(response)")
                 self.parseLoginReponse(response: response as! Dictionary<String, Any>)
-                print("Success Inside Login Block")
             } else {
                 block(success, response, error)
             }
         })
     }
     
+    func getCurrentUserWith(request:Request, withCompletionBlock block:@escaping requestCompletionBlock)
+    {
+        self.interfaceBlock = block
+        RealAPI().performGetAPICallWith(request: request, completionBlock: { success, response, error in
+            if success {
+                NSLog("\n \n Get current user response: \(response)")
+                self.parseUserReponse(response: response as! Dictionary<String, Any>)
+            } else {
+                block(success, response, error)
+            }
+        })
+    }
+    
+    //MARK: Parsing methods
+    
     func parseLoginReponse(response : Dictionary<String, Any>) {
         User.handleLoginResponse(loginResponse: response)
         self.interfaceBlock!(true, "", nil)
+    }
+    
+    func parseUserReponse(response : Dictionary<String, Any>) {
+        let user = User.init(userJson: response)
+        self.interfaceBlock!(true, user, nil)
     }
     
 }
