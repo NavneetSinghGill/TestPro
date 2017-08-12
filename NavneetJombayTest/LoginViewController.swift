@@ -36,9 +36,7 @@ class LoginViewController: UIViewController {
 //                    self.performDealerRelatedAPICalls()
 //                    Util.setDefaultControllerAsRootController()
                     
-                    LoginRequestManager.getCurrentUserWith(block: { (success, response, error) in
-                        
-                    })
+                    self.getCurrentUser()
                     
                 } else {
 //                    Util.showAlertWith(title: "Login Failed", message: error?.localizedDescription, inController: self)
@@ -48,6 +46,21 @@ class LoginViewController: UIViewController {
 //        } else {
 //            print("Invalid entries")
 //        }
+    }
+    
+    func getCurrentUser() {
+        LoginRequestManager.getCurrentUserWith(block: { (success, response, error) in
+            if success {
+                
+                self.getUserWith(companyID: User.user.companyIDs.firstObject as! String,userID: User.user.userID)
+            }
+        })
+    }
+    
+    func getUserWith(companyID: String!, userID: String!) {
+        LoginRequestManager.getUserProfileWith(companyID: companyID, userID: userID) { (success, response, error) in
+            
+        }
     }
 
 }

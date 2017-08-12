@@ -15,7 +15,8 @@ class User : NSObject {
     static var tokenType: String!
     static var user: User!
     
-    var companyIDs: NSMutableArray!
+    var userID: String!
+    var companyIDs: NSArray!
     
     
     
@@ -31,6 +32,10 @@ class User : NSObject {
         
         //Set final user
         User.user = user
+    }
+    
+    func updateUserWithProfileDictionary(profileJson: Dictionary<String, Any>) {
+        
     }
     
     //MARK: Class methods
@@ -54,8 +59,13 @@ class User : NSObject {
 
     //MARK: Private methods
     
-    func initWithDictionary(dictionary : Dictionary<String, Any>) {
-        self.companyIDs = dictionary["company_ids"] as! NSMutableArray
+    private func initWithDictionary(dictionary : Dictionary<String, Any>) {
+        let user = dictionary["user"] as! Dictionary<String, Any>
+        
+        let companyIDs: NSArray = user["company_ids"] as! NSArray
+        self.companyIDs = companyIDs
+        
+        self.userID = user["_id"] as! String
     }
     
 }

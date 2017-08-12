@@ -32,4 +32,15 @@ class LoginRequestManager: NSObject {
         
     }
     
+    static func getUserProfileWith(companyID:String, userID:String,block:@escaping requestCompletionBlock)
+    {
+        if appDelegate.isNetworkAvailable {
+            LoginInterface().getUserProfileWith(request: LoginRequest().getUserProfileWith(companyID: companyID, userID: userID), withCompletionBlock: block)
+            
+        } else{
+            //TODO: show network failure error
+        }
+        
+    }
+    
 }

@@ -38,6 +38,19 @@ class LoginInterface: Interface {
         })
     }
     
+    func getUserProfileWith(request:Request, withCompletionBlock block:@escaping requestCompletionBlock)
+    {
+        self.interfaceBlock = block
+        RealAPI().performGetAPICallWith(request: request, completionBlock: { success, response, error in
+            if success {
+                NSLog("\n \n User profile response: \(response)")
+                self.parseUserProfileReponse(response: response as! Dictionary<String, Any>)
+            } else {
+                block(success, response, error)
+            }
+        })
+    }
+    
     //MARK: Parsing methods
     
     func parseLoginReponse(response : Dictionary<String, Any>) {
@@ -48,6 +61,11 @@ class LoginInterface: Interface {
     func parseUserReponse(response : Dictionary<String, Any>) {
         let user = User.init(userJson: response)
         self.interfaceBlock!(true, user, nil)
+    }
+    
+    func parseUserProfileReponse(response : Dictionary<String, Any>) {
+        User.user.updateUserWithProfileDictionary(profileJson: response)
+        self.interfaceBlock!(true, User.user, nil)
     }
     
 }

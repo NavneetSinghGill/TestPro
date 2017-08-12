@@ -27,4 +27,10 @@ class LoginRequest: Request {
         return self
     }
     
+    func getUserProfileWith(companyID:String, userID:String) -> LoginRequest {
+        
+        self.urlPath = "/companies/\(companyID)/sq/users/\(userID)/user_profile?include[user_lessons][only][]=status&include[user_lessons][include][lesson][only]=title&include[user_lessons][only][]=lesson_id&select[]=_id&select[]=user_document"
+        return self
+    }
+    
 }
