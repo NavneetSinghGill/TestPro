@@ -1,6 +1,6 @@
 //
 //  User.swift
-//  NavneetJombayTest
+//  LevelSense
 //
 //  Created by Navneet Singh on 12/08/17.
 //  Copyright © 2017 Navneet Singh. All rights reserved.

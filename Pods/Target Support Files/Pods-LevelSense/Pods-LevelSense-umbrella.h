@@ -11,6 +11,6 @@
 #endif
 
 
-FOUNDATION_EXPORT double Pods_NavneetJombayTestVersionNumber;
-FOUNDATION_EXPORT const unsigned char Pods_NavneetJombayTestVersionString[];
+FOUNDATION_EXPORT double Pods_LevelSenseVersionNumber;
+FOUNDATION_EXPORT const unsigned char Pods_LevelSenseVersionString[];
 

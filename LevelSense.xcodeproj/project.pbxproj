@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		2A60C1BE1F45D29F003F4C9B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A60C1BC1F45D29F003F4C9B /* Main.storyboard */; };
 		2A7C55E51F46D8BC00A3CD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7C55E31F46D8BC00A3CD91 /* LaunchScreen.storyboard */; };
-		7D5CD34E198412BBCCA56C63 /* Pods_NavneetJombayTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E033AA869FE6722239659C82 /* Pods_NavneetJombayTest.framework */; };
+		7D5CD34E198412BBCCA56C63 /* Pods_LevelSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E033AA869FE6722239659C82 /* Pods_LevelSense.framework */; };
 		F19DAE5F1F3DB03D007F14FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */; };
 		F19DAE611F3DB03D007F14FF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE601F3DB03D007F14FF /* LoginViewController.swift */; };
-		F19DAE671F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE651F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld */; };
+		F19DAE671F3DB03D007F14FF /* LevelSense.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE651F3DB03D007F14FF /* LevelSense.xcdatamodeld */; };
 		F19DAE691F3DB03D007F14FF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F19DAE681F3DB03D007F14FF /* Assets.xcassets */; };
 		F19DAE761F3DCCBB007F14FF /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE751F3DCCBB007F14FF /* Reachability.swift */; };
 		F19DAE791F3DD14A007F14FF /* LoginRequestManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE781F3DD14A007F14FF /* LoginRequestManager.swift */; };
@@ -29,13 +29,13 @@
 /* Begin PBXFileReference section */
 		2A60C1BD1F45D29F003F4C9B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2A7C55E41F46D8BC00A3CD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BF33DE86EC820CBA73807160 /* Pods-NavneetJombayTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavneetJombayTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-NavneetJombayTest/Pods-NavneetJombayTest.release.xcconfig"; sourceTree = "<group>"; };
-		D466DC869107B76DD2C58A25 /* Pods-NavneetJombayTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-NavneetJombayTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-NavneetJombayTest/Pods-NavneetJombayTest.debug.xcconfig"; sourceTree = "<group>"; };
-		E033AA869FE6722239659C82 /* Pods_NavneetJombayTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_NavneetJombayTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F19DAE5B1F3DB03D007F14FF /* NavneetJombayTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NavneetJombayTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF33DE86EC820CBA73807160 /* Pods-LevelSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelSense.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense.release.xcconfig"; sourceTree = "<group>"; };
+		D466DC869107B76DD2C58A25 /* Pods-LevelSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelSense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense.debug.xcconfig"; sourceTree = "<group>"; };
+		E033AA869FE6722239659C82 /* Pods_LevelSense.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LevelSense.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F19DAE5B1F3DB03D007F14FF /* LevelSense.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LevelSense.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F19DAE601F3DB03D007F14FF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
-		F19DAE661F3DB03D007F14FF /* NavneetJombayTest.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = NavneetJombayTest.xcdatamodel; sourceTree = "<group>"; };
+		F19DAE661F3DB03D007F14FF /* LevelSense.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LevelSense.xcdatamodel; sourceTree = "<group>"; };
 		F19DAE681F3DB03D007F14FF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F19DAE6D1F3DB03D007F14FF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F19DAE751F3DCCBB007F14FF /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
@@ -55,7 +55,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7D5CD34E198412BBCCA56C63 /* Pods_NavneetJombayTest.framework in Frameworks */,
+				7D5CD34E198412BBCCA56C63 /* Pods_LevelSense.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,7 +65,7 @@
 		07413B0771216111676D104C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				E033AA869FE6722239659C82 /* Pods_NavneetJombayTest.framework */,
+				E033AA869FE6722239659C82 /* Pods_LevelSense.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -73,8 +73,8 @@
 		30891B5E28594AED7F3DA25F /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				D466DC869107B76DD2C58A25 /* Pods-NavneetJombayTest.debug.xcconfig */,
-				BF33DE86EC820CBA73807160 /* Pods-NavneetJombayTest.release.xcconfig */,
+				D466DC869107B76DD2C58A25 /* Pods-LevelSense.debug.xcconfig */,
+				BF33DE86EC820CBA73807160 /* Pods-LevelSense.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -82,7 +82,7 @@
 		F19DAE521F3DB03D007F14FF = {
 			isa = PBXGroup;
 			children = (
-				F19DAE5D1F3DB03D007F14FF /* NavneetJombayTest */,
+				F19DAE5D1F3DB03D007F14FF /* LevelSense */,
 				F19DAE5C1F3DB03D007F14FF /* Products */,
 				30891B5E28594AED7F3DA25F /* Pods */,
 				07413B0771216111676D104C /* Frameworks */,
@@ -92,12 +92,12 @@
 		F19DAE5C1F3DB03D007F14FF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F19DAE5B1F3DB03D007F14FF /* NavneetJombayTest.app */,
+				F19DAE5B1F3DB03D007F14FF /* LevelSense.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F19DAE5D1F3DB03D007F14FF /* NavneetJombayTest */ = {
+		F19DAE5D1F3DB03D007F14FF /* LevelSense */ = {
 			isa = PBXGroup;
 			children = (
 				F19DAE741F3DCCBB007F14FF /* Reachability */,
@@ -110,9 +110,9 @@
 				2A60C1BC1F45D29F003F4C9B /* Main.storyboard */,
 				2A7C55E31F46D8BC00A3CD91 /* LaunchScreen.storyboard */,
 				F19DAE6D1F3DB03D007F14FF /* Info.plist */,
-				F19DAE651F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld */,
+				F19DAE651F3DB03D007F14FF /* LevelSense.xcdatamodeld */,
 			);
-			path = NavneetJombayTest;
+			path = LevelSense;
 			sourceTree = "<group>";
 		};
 		F19DAE741F3DCCBB007F14FF /* Reachability */ = {
@@ -164,9 +164,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F19DAE5A1F3DB03D007F14FF /* NavneetJombayTest */ = {
+		F19DAE5A1F3DB03D007F14FF /* LevelSense */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F19DAE701F3DB03D007F14FF /* Build configuration list for PBXNativeTarget "NavneetJombayTest" */;
+			buildConfigurationList = F19DAE701F3DB03D007F14FF /* Build configuration list for PBXNativeTarget "LevelSense" */;
 			buildPhases = (
 				8022D203C6EDD6B385BABC79 /* [CP] Check Pods Manifest.lock */,
 				F19DAE571F3DB03D007F14FF /* Sources */,
@@ -179,9 +179,9 @@
 			);
 			dependencies = (
 			);
-			name = NavneetJombayTest;
-			productName = NavneetJombayTest;
-			productReference = F19DAE5B1F3DB03D007F14FF /* NavneetJombayTest.app */;
+			name = LevelSense;
+			productName = LevelSense;
+			productReference = F19DAE5B1F3DB03D007F14FF /* LevelSense.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -199,7 +199,7 @@
 					};
 				};
 			};
-			buildConfigurationList = F19DAE561F3DB03D007F14FF /* Build configuration list for PBXProject "NavneetJombayTest" */;
+			buildConfigurationList = F19DAE561F3DB03D007F14FF /* Build configuration list for PBXProject "LevelSense" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -212,7 +212,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				F19DAE5A1F3DB03D007F14FF /* NavneetJombayTest */,
+				F19DAE5A1F3DB03D007F14FF /* LevelSense */,
 			);
 		};
 /* End PBXProject section */
@@ -242,7 +242,7 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-NavneetJombayTest-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-LevelSense-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -261,7 +261,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavneetJombayTest/Pods-NavneetJombayTest-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		E2409EA15A3F0D8F5C26042E /* [CP] Embed Pods Frameworks */ = {
@@ -270,7 +270,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-NavneetJombayTest/Pods-NavneetJombayTest-frameworks.sh",
+				"${SRCROOT}/Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -279,7 +279,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-NavneetJombayTest/Pods-NavneetJombayTest-frameworks.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -292,7 +292,7 @@
 				F19DAE8C1F3ECC1E007F14FF /* User.swift in Sources */,
 				F19DAE831F3DD3BC007F14FF /* LoginRequest.swift in Sources */,
 				F19DAE851F3DD46C007F14FF /* Interface.swift in Sources */,
-				F19DAE671F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld in Sources */,
+				F19DAE671F3DB03D007F14FF /* LevelSense.xcdatamodeld in Sources */,
 				F19DAE891F3DD8D0007F14FF /* NetworkHttpClient.swift in Sources */,
 				F19DAE7F1F3DD1F4007F14FF /* LoginInterface.swift in Sources */,
 				F19DAE7D1F3DD1C3007F14FF /* Request.swift in Sources */,
@@ -436,13 +436,13 @@
 		};
 		F19DAE711F3DB03D007F14FF /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D466DC869107B76DD2C58A25 /* Pods-NavneetJombayTest.debug.xcconfig */;
+			baseConfigurationReference = D466DC869107B76DD2C58A25 /* Pods-LevelSense.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NavneetJombayTest/Info.plist;
+				INFOPLIST_FILE = LevelSense/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Navneet-Singh-GIll.NavneetJombayTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "Navneet-Singh-GIll.LevelSense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -451,13 +451,13 @@
 		};
 		F19DAE721F3DB03D007F14FF /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BF33DE86EC820CBA73807160 /* Pods-NavneetJombayTest.release.xcconfig */;
+			baseConfigurationReference = BF33DE86EC820CBA73807160 /* Pods-LevelSense.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				INFOPLIST_FILE = NavneetJombayTest/Info.plist;
+				INFOPLIST_FILE = LevelSense/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = "Navneet-Singh-GIll.NavneetJombayTest";
+				PRODUCT_BUNDLE_IDENTIFIER = "Navneet-Singh-GIll.LevelSense";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -467,7 +467,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F19DAE561F3DB03D007F14FF /* Build configuration list for PBXProject "NavneetJombayTest" */ = {
+		F19DAE561F3DB03D007F14FF /* Build configuration list for PBXProject "LevelSense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F19DAE6E1F3DB03D007F14FF /* Debug */,
@@ -476,7 +476,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F19DAE701F3DB03D007F14FF /* Build configuration list for PBXNativeTarget "NavneetJombayTest" */ = {
+		F19DAE701F3DB03D007F14FF /* Build configuration list for PBXNativeTarget "LevelSense" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F19DAE711F3DB03D007F14FF /* Debug */,
@@ -488,13 +488,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		F19DAE651F3DB03D007F14FF /* NavneetJombayTest.xcdatamodeld */ = {
+		F19DAE651F3DB03D007F14FF /* LevelSense.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				F19DAE661F3DB03D007F14FF /* NavneetJombayTest.xcdatamodel */,
+				F19DAE661F3DB03D007F14FF /* LevelSense.xcdatamodel */,
 			);
-			currentVersion = F19DAE661F3DB03D007F14FF /* NavneetJombayTest.xcdatamodel */;
-			path = NavneetJombayTest.xcdatamodeld;
+			currentVersion = F19DAE661F3DB03D007F14FF /* LevelSense.xcdatamodel */;
+			path = LevelSense.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};
