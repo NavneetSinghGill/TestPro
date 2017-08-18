@@ -2,8 +2,8 @@
 //  LoginInterface.swift
 //  LevelSense
 //
-//  Created by Navneet Singh on 11/08/17.
-//  Copyright © 2017 Navneet Singh. All rights reserved.
+//  Created by BestPeers on 11/08/17.
+//  Copyright © 2017 BestPeers. All rights reserved.
 //
 
 import UIKit
