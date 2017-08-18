@@ -101,7 +101,7 @@
             </objects>
             <point key="canvasLocation" x="878" y="55"/>
         </scene>
-        <!--My Devices-->
+        <!--My Devices View Controller-->
         <scene sceneID="oJj-0N-u1m">
             <objects>
                 <viewController storyboardIdentifier="MyDevicesViewController" id="L9x-1r-sOR" customClass="MyDevicesViewController" customModule="LevelSense" customModuleProvider="target" sceneMemberID="viewController">
@@ -114,7 +114,13 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" title="My Devices" id="AFO-AI-c8Z"/>
+                    <navigationItem key="navigationItem" id="AFO-AI-c8Z">
+                        <barButtonItem key="leftBarButtonItem" title="Item" id="kXt-bF-e0w">
+                            <connections>
+                                <action selector="menuButtonTappedWithSender:" destination="L9x-1r-sOR" id="V1g-eZ-zEG"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBh-uz-jkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -132,9 +138,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-e9-ja1">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" scrollEnabled="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="mJZ-e9-ja1">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="0.0" green="0.43137254899999999" blue="0.74509803919999995" alpha="1" colorSpace="deviceRGB"/>
+                                <connections>
+                                    <outlet property="dataSource" destination="eCp-zh-IFL" id="WYU-IF-LLc"/>
+                                    <outlet property="delegate" destination="eCp-zh-IFL" id="J3p-Qo-Bm2"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -145,6 +155,9 @@
                             <constraint firstItem="qg3-AY-Dtu" firstAttribute="top" secondItem="mJZ-e9-ja1" secondAttribute="bottom" id="rv3-YP-ceO"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="tableView" destination="mJZ-e9-ja1" id="SF6-9L-4Kf"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LFK-q2-rO6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

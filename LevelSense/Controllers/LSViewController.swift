@@ -19,7 +19,7 @@ import UIKit
 
 class LSViewController: UIViewController {
     
-    @IBOutlet var menuButton: UIBarButtonItem!
+    var menuButton: UIBarButtonItem!
     var navigationTitleLabel: UILabel!
 
     override func viewDidLoad() {
@@ -36,15 +36,20 @@ class LSViewController: UIViewController {
     //MARK:- Public methods
     
     func addMenuButton() {
-        menuButton = UIBarButtonItem(image: UIImage.init(named: "menuIcon"), style: UIBarButtonItemStyle.plain, target: self, action: Selector(("menuButtonTapped:")))
-        self.navigationController?.navigationItem.leftBarButtonItem = menuButton
-        
-        
-        
-        if self.revealViewController() != nil {
+        //        menuButton = UIBarButtonItem(image: UIImage.init(named: "menuIcon"), style: UIBarButtonItemStyle.plain, target: self, action: Selector(("menuButtonTapped:")))
+        if self.revealViewController() != nil && menuButton == nil {
+            
+            let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
+            button.backgroundColor = .clear
+            button.setImage(UIImage(named: "menuIcon"), for: .normal)
+            button.addTarget(self, action: Selector(("menuButtonTapped:")), for: .touchUpInside)
+            menuButton = UIBarButtonItem(customView: button)
+            
             menuButton.target = self.revealViewController()
             menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            
+            self.navigationController?.navigationItem.leftBarButtonItem = menuButton
         }
     }
     
@@ -62,8 +67,8 @@ class LSViewController: UIViewController {
     
     //MARK:- IBAction methods
     
-    func menuButtonTapped(sender: UIButton) {
-        
+    @IBAction func menuButtonTapped(sender: UIButton) {
+        self.revealViewController().revealToggle(self)
     }
 
 }

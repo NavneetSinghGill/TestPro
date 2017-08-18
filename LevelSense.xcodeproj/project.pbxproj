@@ -13,6 +13,8 @@
 		2A6D2AEC1F47014700C98631 /* LSViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D2AEB1F47014700C98631 /* LSViewController.swift */; };
 		2A6D2AF31F4705CA00C98631 /* MyDevicesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D2AF21F4705CA00C98631 /* MyDevicesViewController.swift */; };
 		2A6D2AF71F47080500C98631 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D2AF61F47080500C98631 /* SWRevealViewController.m */; };
+		2A6D2AFA1F47232400C98631 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A6D2AF81F47232400C98631 /* MenuTableViewCell.swift */; };
+		2A6D2AFB1F47232400C98631 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A6D2AF91F47232400C98631 /* MenuTableViewCell.xib */; };
 		2A7C55E51F46D8BC00A3CD91 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A7C55E31F46D8BC00A3CD91 /* LaunchScreen.storyboard */; };
 		7D5CD34E198412BBCCA56C63 /* Pods_LevelSense.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E033AA869FE6722239659C82 /* Pods_LevelSense.framework */; };
 		F19DAE5F1F3DB03D007F14FF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F19DAE5E1F3DB03D007F14FF /* AppDelegate.swift */; };
@@ -39,6 +41,8 @@
 		2A6D2AF41F47080500C98631 /* LevelSense-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LevelSense-Bridging-Header.h"; sourceTree = "<group>"; };
 		2A6D2AF51F47080500C98631 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
 		2A6D2AF61F47080500C98631 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		2A6D2AF81F47232400C98631 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		2A6D2AF91F47232400C98631 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		2A7C55E41F46D8BC00A3CD91 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BF33DE86EC820CBA73807160 /* Pods-LevelSense.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelSense.release.xcconfig"; path = "Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense.release.xcconfig"; sourceTree = "<group>"; };
 		D466DC869107B76DD2C58A25 /* Pods-LevelSense.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LevelSense.debug.xcconfig"; path = "Pods/Target Support Files/Pods-LevelSense/Pods-LevelSense.debug.xcconfig"; sourceTree = "<group>"; };
@@ -104,6 +108,8 @@
 		2A6D2AEA1F46FF3C00C98631 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				2A6D2AF81F47232400C98631 /* MenuTableViewCell.swift */,
+				2A6D2AF91F47232400C98631 /* MenuTableViewCell.xib */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -290,6 +296,7 @@
 			files = (
 				2A7C55E51F46D8BC00A3CD91 /* LaunchScreen.storyboard in Resources */,
 				F19DAE691F3DB03D007F14FF /* Assets.xcassets in Resources */,
+				2A6D2AFB1F47232400C98631 /* MenuTableViewCell.xib in Resources */,
 				2A60C1BE1F45D29F003F4C9B /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -369,6 +376,7 @@
 				2A6D2AF71F47080500C98631 /* SWRevealViewController.m in Sources */,
 				F19DAE871F3DD846007F14FF /* RealAPI.swift in Sources */,
 				F19DAE761F3DCCBB007F14FF /* Reachability.swift in Sources */,
+				2A6D2AFA1F47232400C98631 /* MenuTableViewCell.swift in Sources */,
 				F19DAE5F1F3DB03D007F14FF /* AppDelegate.swift in Sources */,
 				F19DAE791F3DD14A007F14FF /* LoginRequestManager.swift in Sources */,
 				2A6D2AEC1F47014700C98631 /* LSViewController.swift in Sources */,
