@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LoginViewController: UIViewController {
+class LoginViewController: LSViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,10 +19,14 @@ class LoginViewController: UIViewController {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
+    
+    //MARK: IBAction methods
+    
     @IBAction func logInButtonTapped(_ sender: UIButton) {
         self.performLogin()
     }
+    
+    //MARK: Private methods
 
     func performLogin() -> Void {
 //            showLoader()

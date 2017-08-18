@@ -13,7 +13,11 @@ let appDelegate = UIApplication.shared.delegate as! AppDelegate
 
 public typealias requestCompletionBlock = (_ success: Bool, _ response: Any, _ error: Error?) -> Void
 
-//MARK: - Parameters
+//MARK: Colors
+
+let blueColor = UIColor.init(colorLiteralRed: 0, green: 110/255.0, blue: 190/255, alpha: 1.0)
+
+//MARK: Parameters
 
 let kUsername = "username"
 let kPassword = "password"
