@@ -19,7 +19,7 @@ import UIKit
 
 class LSViewController: UIViewController {
     
-    var menuButton: UIBarButtonItem!
+    var menuBarButton: UIBarButtonItem!
     var navigationTitleLabel: UILabel!
 
     override func viewDidLoad() {
@@ -36,21 +36,23 @@ class LSViewController: UIViewController {
     //MARK:- Public methods
     
     func addMenuButton() {
-        //        menuButton = UIBarButtonItem(image: UIImage.init(named: "menuIcon"), style: UIBarButtonItemStyle.plain, target: self, action: Selector(("menuButtonTapped:")))
-        if self.revealViewController() != nil && menuButton == nil {
+        if self.revealViewController() != nil && menuBarButton == nil {
             
-            let button = UIButton(frame: CGRect(x: 100, y: 100, width: 100, height: 50))
-            button.backgroundColor = .clear
-            button.setImage(UIImage(named: "menuIcon"), for: .normal)
-            button.addTarget(self, action: Selector(("menuButtonTapped:")), for: .touchUpInside)
-            menuButton = UIBarButtonItem(customView: button)
-            
-            menuButton.target = self.revealViewController()
-            menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
+            menuBarButton = UIBarButtonItem(customView: menuButton())
             self.view.addGestureRecognizer(self.revealViewController().panGestureRecognizer())
+            self.navigationItem.leftBarButtonItem = menuBarButton!
             
-            self.navigationController?.navigationItem.leftBarButtonItem = menuButton
+            self.revealViewController().rearViewRevealWidth = screenWidth - 80 //80 is the width of main screens that will the seen when left menu is open
         }
+    }
+    
+    func menuButton() -> UIButton {
+        let button = UIButton(frame: CGRect(x: 0, y: 0, width: 40, height: 40))
+        button.backgroundColor = .clear
+        button.setImage(UIImage(named: "menuIcon"), for: .normal)
+        button.addTarget(self.revealViewController(), action: #selector(SWRevealViewController.revealToggle(_:)), for: .touchUpInside)
+        
+        return button
     }
     
     func setNavigationTitle(title:String) {
@@ -58,7 +60,7 @@ class LSViewController: UIViewController {
             navigationTitleLabel = UILabel()
         }
         navigationTitleLabel.textColor = blueColor
-        navigationTitleLabel.font = UIFont(name: "HelveticaNeueu-Bold", size: 16)
+        navigationTitleLabel.font = UIFont(name: "HelveticaNeue-Bold", size: 16)
         navigationTitleLabel.text = title
         navigationTitleLabel.sizeToFit()
         

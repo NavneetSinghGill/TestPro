@@ -16,7 +16,7 @@ class MyDevicesViewController: LSViewController {
         // Do any additional setup after loading the view.
         
         addMenuButton()
-        setNavigationTitle(title: "My Devices")
+        setNavigationTitle(title: "MY DEVICES")
     }
 
 }

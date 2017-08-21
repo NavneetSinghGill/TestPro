@@ -17,6 +17,9 @@ public typealias requestCompletionBlock = (_ success: Bool, _ response: Any, _ e
 
 let blueColor = UIColor.init(colorLiteralRed: 0, green: 110/255.0, blue: 190/255, alpha: 1.0)
 
+let screenWidth = UIScreen.main.bounds.width
+let screenHeight = UIScreen.main.bounds.height
+
 //MARK: Parameters
 
 let kUsername = "username"

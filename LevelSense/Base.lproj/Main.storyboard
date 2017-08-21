@@ -114,13 +114,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="AFO-AI-c8Z">
-                        <barButtonItem key="leftBarButtonItem" title="Item" id="kXt-bF-e0w">
-                            <connections>
-                                <action selector="menuButtonTappedWithSender:" destination="L9x-1r-sOR" id="V1g-eZ-zEG"/>
-                            </connections>
-                        </barButtonItem>
-                    </navigationItem>
+                    <navigationItem key="navigationItem" id="AFO-AI-c8Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uBh-uz-jkG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
